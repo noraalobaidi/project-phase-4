@@ -1,10 +1,14 @@
 <div class="item-card">
-  <img class="item-img" />
-  <div class="item-name-price"></div>
-  <p class="item-desc"></p>
+  <img class="item-img" src="{{ item.img }}" />
+  <div class="item-name-price">
+    <p class="item-name">{{ item.name }}</p>
+    <p class="item-price">{{ item.price }} KWD</p>
+  </div>
+  <div class="item-desc">{{ item.name }}</div>
   <div class="item-change">
     <div class="item-minus">-</div>
-    <div class="item-amount"></div>
+    <div class="item-amount">0</div>
     <div class="item-plus">+</div>
   </div>
+  <div class="item-add-to-cart">Add to cart</div>
 </div>

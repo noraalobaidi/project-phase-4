@@ -1,0 +1,15 @@
+.list {
+  display: grid;
+  grid-template-columns: 330px 330px 330px 330px;
+  grid-template-rows: 410px;
+}
+
+.searchbar {
+  width: 500px;
+  height: 40px;
+  border-radius: 30px;
+  padding: 5px;
+  border: 0px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}

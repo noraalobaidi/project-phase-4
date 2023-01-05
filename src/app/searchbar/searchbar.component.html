@@ -1,1 +1,16 @@
-<p>searchbar works!</p>
+<div style="display: flex; justify-content: center">
+  <input
+    type="text"
+    [(ngModel)]="searchvalue"
+    placeholder="   Search for an item "
+    class="searchbar"
+  />
+</div>
+
+<!-- <button>search</button> -->
+<!-- <div>{{ searchvalue }}</div> -->
+<div class="list">
+  <div *ngFor="let item of list | filter : searchvalue">
+    <app-item [item]="item"></app-item>
+  </div>
+</div>

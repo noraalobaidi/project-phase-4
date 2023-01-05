@@ -1,0 +1,30 @@
+<script
+  src="https://kit.fontawesome.com/36d247554f.js"
+  crossorigin="anonymous"
+></script>
+<div class="item">
+  <img class="orderImage" src="{{ order.img }}" />
+
+  <p class="title">{{ order.name }}</p>
+
+  <p class="qty">{{ order.desc }}</p>
+
+  <p class="total">{{ order.qty }}</p>
+
+  <p class="total">{{ order.total | number : "1.2-2" }} KWD</p>
+
+  <button
+    style="
+      width: 30px;
+      height: 30px;
+      font-size: larger;
+      background-color: white;
+      border: 0px;
+      color: #ff8e72;
+      cursor: pointer;
+    "
+    (click)="removeItem()"
+  >
+    <fa-icon [icon]="faTrash"></fa-icon>
+  </button>
+</div>

@@ -10,6 +10,8 @@
 }
 .item-img {
   width: 295px;
+  height: 200px;
+  object-fit: cover;
   /* margin-top: 10px; */
   border-radius: 5px;
 }

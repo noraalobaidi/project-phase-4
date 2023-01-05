@@ -1,0 +1,24 @@
+.cartbtn {
+  background-color: #ff8e72;
+  border-radius: 25px;
+  border: 0px;
+  width: 130px;
+  height: 40px;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  background-color: rgb(255, 255, 255);
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  margin-left: 15px;
+  cursor: pointer;
+}

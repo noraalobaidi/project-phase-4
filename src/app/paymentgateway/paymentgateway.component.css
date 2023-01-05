@@ -1,0 +1,91 @@
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: rgb(234, 234, 234);
+  height: 665px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.paymentgateway {
+  margin-top: 50px;
+  width: 1000px;
+  height: 500px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 20px;
+}
+.shipping_personal {
+  /* background-color: yellow; */
+  width: 400px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.payment {
+  /* background-color: coral; */
+  width: 400px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.inputf {
+  height: 30px;
+  border-radius: 20px;
+  border: 0px;
+  background-color: rgb(234, 234, 234);
+}
+
+label {
+  margin-left: 6px;
+  font-size: medium;
+  color: grey;
+}
+
+.buybtn {
+  background-color: #ff8e72;
+  width: 400px;
+  height: 30px;
+  border-radius: 20px;
+  border: 0px;
+  text-decoration: none;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+.exp {
+  display: flex;
+  width: 400px;
+  justify-content: space-between;
+}
+
+.containernav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  background-color: rgb(255, 255, 255);
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.cartbtn {
+  background-color: #ff8e72;
+  border-radius: 25px;
+  border: 0px;
+  width: 130px;
+  height: 40px;
+  text-decoration: none;
+  margin-right: 10px;
+}

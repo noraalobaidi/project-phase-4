@@ -1,0 +1,78 @@
+<div class="containernav">
+  <img
+    class="logo"
+    routerLink="/homepage"
+    src="https://www.zarla.com/images/zarla-our-kitchen-1x1-2400x2400-20211105-h3rkb8t4qvc74kx6bjpt.png?crop=1:1,smart&width=250&dpr=2"
+  />
+</div>
+<body>
+  <div>
+    <div style="margin-top: 30px; display: flex; justify-content: center">
+      <p style="color: rgb(3, 180, 3); font-size: 50px">
+        <fa-icon
+          style="color: rgb(3, 180, 3); font-size: 50px"
+          [icon]="faCircleCheck"
+        ></fa-icon>
+        Payment Successful !
+      </p>
+    </div>
+    <div style="display: flex; align-items: center; flex-direction: column">
+      <p style="margin-top: 0px">WE HAVE RECEIVED YOUR ORDER !</p>
+      <p style="margin: 0px">Thanks for shopping with Our Kitchen!</p>
+      <p style="margin: 0px">
+        You'll find a summary of your recent purchase below
+      </p>
+      <p style="margin: 0px">
+        Please allow up to 2 business days to process and ship your order
+      </p>
+      <p style="margin: 0px">
+        You will receive an email when your order has shipped
+      </p>
+    </div>
+  </div>
+  <div style="display: flex; justify-content: center; flex-direction: column">
+    <div>
+      <div *ngIf="orders.length > 0">
+        <div class="itemheader">
+          <p>Item</p>
+          <p>Description</p>
+          <p>Quantity</p>
+          <p>Price</p>
+        </div>
+        <div *ngFor="let order of orders">
+          <div class="item">
+            <img class="orderImage" src="{{ order.img }}" />
+
+            <p>{{ order.name }}</p>
+
+            <p>{{ order.desc }}</p>
+
+            <p>{{ order.qty }}</p>
+
+            <p>{{ order.total | number : "1.2-2" }} KWD</p>
+          </div>
+        </div>
+        <div class="total">
+          <p>total</p>
+          <p>{{ total | number : "1.2-2" }} KWD</p>
+        </div>
+      </div>
+      <div
+        *ngIf="orders.length == 0"
+        style="
+          background-color: white;
+          width: 500px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 50px;
+          border-radius: 20px;
+          margin-top: 100px;
+          font-size: larger;
+        "
+      >
+        cart is empty
+      </div>
+    </div>
+  </div>
+</body>

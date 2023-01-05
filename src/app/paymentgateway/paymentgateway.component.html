@@ -1,0 +1,114 @@
+<div class="containernav">
+  <img
+    class="logo"
+    routerLink="/homepage"
+    src="https://www.zarla.com/images/zarla-our-kitchen-1x1-2400x2400-20211105-h3rkb8t4qvc74kx6bjpt.png?crop=1:1,smart&width=250&dpr=2"
+  />
+  <button class="cartbtn">
+    <a
+      style="text-decoration: none; color: white; font-size: 15px"
+      routerLink="/cartDetails"
+    >
+      Back
+    </a>
+  </button>
+</div>
+<body>
+  <div class="container">
+    <div class="paymentgateway">
+      <div class="shipping_personal">
+        <div style="display: flex; flex-direction: row">
+          <div>
+            <label>First Name</label>
+            <input class="inputf" type="text" placeholder="   ex. Nora" />
+          </div>
+          <div>
+            <label>Last Name</label>
+            <input class="inputf" type="text" placeholder="   ex. AlObaidi" />
+          </div>
+        </div>
+
+        <label>Address</label>
+        <input
+          class="inputf"
+          type="text"
+          placeholder="   ex. Area, Block , Street , Avenue , House "
+        />
+        <label>City</label>
+        <input class="inputf" type="text" placeholder="   ex. Kuwait city" />
+        <label>Email</label>
+        <input
+          class="inputf"
+          type="text"
+          placeholder="   ex. nora.alobaidi@hotmail.com"
+        />
+      </div>
+      <div class="payment">
+        <label>Card number</label>
+        <input
+          class="inputf"
+          type="text"
+          placeholder="   ex. 1 2 3 4   1 2 3 4   1 2 3 4   1 2 3 4"
+        />
+        <label>Card expiration date</label>
+        <div class="exp">
+          <select class="inputf" style="width: 190px">
+            <option>January</option>
+            <option>February</option>
+            <option>March</option>
+            <option>April</option>
+            <option>May</option>
+            <option>June</option>
+            <option>July</option>
+            <option>August</option>
+            <option>September</option>
+            <option>October</option>
+            <option>November</option>
+            <option>December</option>
+          </select>
+          <select class="inputf" style="width: 190px">
+            <option>2023</option>
+            <option>2024</option>
+            <option>2025</option>
+            <option>2026</option>
+            <option>2027</option>
+            <option>2028</option>
+            <option>2029</option>
+            <option>2030</option>
+            <option>2031</option>
+            <option>2032</option>
+            <option>2033</option>
+            <option>2034</option>
+            <option>2035</option>
+            <option>2036</option>
+            <option>2037</option>
+            <option>2038</option>
+            <option>2039</option>
+            <option>2040</option>
+          </select>
+        </div>
+        <div>
+          <label>CVV</label>
+          <label style="font-size: 10px">(3 Digits)</label>
+        </div>
+
+        <input class="inputf" type="text" required placeholder="   ex. 1 2 3" />
+        <label>Card holder name</label>
+        <input
+          class="inputf"
+          type="text"
+          placeholder="   ex. NORA KH ALOABIDI"
+        />
+        <button class="buybtn">
+          <a
+            routerLink="/confirmation"
+            type="submit"
+            style="text-decoration: none; color: white; font-size: 15px"
+          >
+            Submit
+          </a>
+        </button>
+      </div>
+    </div>
+  </div>
+</body>

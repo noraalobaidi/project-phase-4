@@ -3,3 +3,10 @@
   grid-template-columns: 330px 330px 330px 330px;
   grid-template-rows: 410px;
 }
+
+.homepage {
+  /* margin: 0; */
+  background-color: rgb(234, 234, 234);
+  display: flex;
+  justify-content: center;
+}

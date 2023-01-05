@@ -1,8 +1,8 @@
-export class Item {
-  id!: number;
+export class Order {
+  Itemid!: number;
   name!: string;
   desc!: string;
-  price!: number;
+  total!: number;
   qty!: number;
   img!: string;
 }

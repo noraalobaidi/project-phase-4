@@ -1,1 +1,34 @@
-<p>navbar works!</p>
+<div class="container">
+  <img
+    class="logo"
+    routerLink="/homepage"
+    src="https://www.zarla.com/images/zarla-our-kitchen-1x1-2400x2400-20211105-h3rkb8t4qvc74kx6bjpt.png?crop=1:1,smart&width=250&dpr=2"
+  />
+  <div
+    style="
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 200px;
+    "
+  >
+    <a
+      style="text-decoration: none; color: white; font-size: 15px"
+      routerLink="/cartDetails"
+    >
+      <fa-icon
+        style="color: grey; font-size: 30px"
+        [icon]="faCartShopping"
+      ></fa-icon>
+    </a>
+
+    <button class="cartbtn">
+      <a
+        style="text-decoration: none; color: white; font-size: 15px"
+        routerLink="/login"
+      >
+        Login
+      </a>
+    </button>
+  </div>
+</div>

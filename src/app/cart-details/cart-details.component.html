@@ -1,0 +1,53 @@
+<div class="container">
+  <img
+    class="logo"
+    routerLink="/homepage"
+    src="https://www.zarla.com/images/zarla-our-kitchen-1x1-2400x2400-20211105-h3rkb8t4qvc74kx6bjpt.png?crop=1:1,smart&width=250&dpr=2"
+  />
+</div>
+
+<body>
+  <div style="display: flex; justify-content: center; align-items: center">
+    <div *ngIf="orders.length > 0">
+      <div class="itemheader">
+        <p>Item</p>
+        <p>Description</p>
+        <p>Quantity</p>
+        <p>Price</p>
+      </div>
+      <div *ngFor="let order of orders">
+        <app-cart-details-item [order]="order"></app-cart-details-item>
+      </div>
+      <div class="total">
+        <p>total</p>
+        <p>{{ total | number : "1.2-2" }} KWD</p>
+      </div>
+      <div style="display: flex; justify-content: flex-end; margin-top: 30px">
+        <button class="buybtn">
+          <a
+            routerLink="/payment"
+            style="text-decoration: none; color: white; font-size: 15px"
+          >
+            Check out
+          </a>
+        </button>
+      </div>
+    </div>
+    <div
+      *ngIf="orders.length == 0"
+      style="
+        background-color: white;
+        width: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        border-radius: 20px;
+        margin-top: 100px;
+        font-size: larger;
+      "
+    >
+      cart is empty
+    </div>
+  </div>
+</body>

@@ -4,11 +4,11 @@
     <p class="item-name">{{ item.name }}</p>
     <p class="item-price">{{ item.price }} KWD</p>
   </div>
-  <div class="item-desc">{{ item.name }}</div>
+  <div class="item-desc">{{ item.desc }}</div>
   <div class="item-change">
-    <div class="item-minus">-</div>
-    <div class="item-amount">0</div>
-    <div class="item-plus">+</div>
+    <div class="item-minus" (click)="decrementItem()">-</div>
+    <div class="item-amount">{{ itemamount }}</div>
+    <div class="item-plus" (click)="incrementItem()">+</div>
   </div>
-  <div class="item-add-to-cart">Add to cart</div>
+  <div class="item-add-to-cart" (click)="addItemToCart()">Add to cart</div>
 </div>

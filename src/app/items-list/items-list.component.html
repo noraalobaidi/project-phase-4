@@ -1,0 +1,65 @@
+<div class="containernav">
+  <img
+    class="logo"
+    routerLink="/homepage"
+    src="https://www.zarla.com/images/zarla-our-kitchen-1x1-2400x2400-20211105-h3rkb8t4qvc74kx6bjpt.png?crop=1:1,smart&width=250&dpr=2"
+  />
+  <button class="cartbtn">
+    <a
+      style="text-decoration: none; color: white; font-size: 15px"
+      routerLink="/homepage"
+    >
+      Logout
+    </a>
+  </button>
+</div>
+<body>
+  <div style="display: flex; justify-content: center; align-items: center">
+    <div *ngIf="list.length > 0">
+      <div class="itemheader">
+        <p>Item</p>
+        <p>Description</p>
+        <p>Price</p>
+      </div>
+      <div *ngFor="let item of list">
+        <div class="item">
+          <img class="orderImage" src="{{ item.img }}" />
+
+          <p>{{ item.name }}</p>
+
+          <p>{{ item.desc }}</p>
+
+          <p>{{ item.price }}</p>
+
+          <button
+            style="
+              width: 30px;
+              height: 30px;
+              font-size: larger;
+              background-color: white;
+              border: 0px;
+              color: #ff8e72;
+              cursor: pointer;
+            "
+          >
+            <fa-icon [icon]="faTrash"></fa-icon>
+          </button>
+        </div>
+      </div>
+
+      <div style="background-color: red">
+        <button
+          class="buybtn"
+          style="position: fixed; bottom: 20px; left: 1410px"
+        >
+          <a
+            routerLink="/addNewItem"
+            style="text-decoration: none; color: white; font-size: 30px"
+          >
+            +
+          </a>
+        </button>
+      </div>
+    </div>
+  </div>
+</body>

@@ -1,12 +1,3 @@
-body {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  background-color: rgb(234, 234, 234);
-  height: 665px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
 .containernav {
   display: flex;
   align-items: center;
@@ -33,14 +24,27 @@ body {
   margin-top: 20px;
 }
 
-.inputf {
-  width: 400px;
-  height: 40px;
-  border-radius: 20px;
-  margin-top: 20px;
+.menubtn {
+  background-color: #ff8e72;
+  border-radius: 25px;
   border: 0px;
-  background-color: rgb(232, 232, 232);
+  width: 450px;
+  height: 40px;
+  text-decoration: none;
+  /* margin-right: 10px; */
+  margin-bottom: 30px;
 }
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: rgb(234, 234, 234);
+  height: 665px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .minicontainer {
   display: flex;
   justify-content: center;

@@ -17,6 +17,10 @@ import { PaymentgatewayComponent } from './paymentgateway/paymentgateway.compone
 import { ConfirmationComponent } from './confirmation/confirmation.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { LoginpageComponent } from './loginpage/loginpage.component';
+import { AdminpageComponent } from './adminpage/adminpage.component';
+import { UpdatepassComponent } from './updatepass/updatepass.component';
+import { ItemsListComponent } from './items-list/items-list.component';
+import { AddnewitemComponent } from './addnewitem/addnewitem.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +36,10 @@ import { LoginpageComponent } from './loginpage/loginpage.component';
     PaymentgatewayComponent,
     ConfirmationComponent,
     LoginpageComponent,
+    AdminpageComponent,
+    UpdatepassComponent,
+    ItemsListComponent,
+    AddnewitemComponent,
   ],
   imports: [
     BrowserModule,

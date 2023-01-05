@@ -1,22 +1,20 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
+import { CartServService } from '../cart-serv.service';
 import { Item } from '../item';
+import { Order } from '../orders';
+import { faTrash } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
-  selector: 'app-searchbar',
-  templateUrl: './searchbar.component.html',
-  styleUrls: ['./searchbar.component.css'],
+  selector: 'app-items-list',
+  templateUrl: './items-list.component.html',
+  styleUrls: ['./items-list.component.css'],
 })
-export class SearchbarComponent {
-  searchvalue!: string;
+export class ItemsListComponent {
+  orders: Order[] = this.service.cart;
+  faTrash = faTrash;
+  total: number = this.service.getCartTotalPrice();
+  constructor(private service: CartServService) {}
   list: Item[] = [
-    // {
-    //   id: 1,
-    //   name: 'banana',
-    //   desc: 'FRUITS',
-    //   price: 0.2,
-    //   qty: 10,
-    //   img: 'https://cdn1.sph.harvard.edu/wp-content/uploads/sites/30/2018/08/bananas-1354785_1920.jpg',
-    // },
     {
       id: 2,
       name: 'Apple',
@@ -57,14 +55,5 @@ export class SearchbarComponent {
       qty: 10,
       img: 'https://www.oncost.com/media/catalog/product/cache/3/image/570x380/9df78eab33525d08d6e5fb8d27136e95/2/3/23227_1.jpg',
     },
-    {
-      id: 7,
-      name: 'Strawberry',
-      desc: 'FRUITS',
-      price: 0.755,
-      qty: 10,
-      img: 'http://clv.h-cdn.co/assets/15/22/2048x2048/square-1432664914-strawberry-facts1.jpg',
-    },
   ];
-  // @Input('cart') cart!: number;
 }
